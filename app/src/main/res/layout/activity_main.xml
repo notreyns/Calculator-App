@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/first_input_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter first number"
+            android:inputType="number"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:textColorHint="#BEAEDC"
+            />
+        <EditText
+            android:id="@+id/second_input_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter second number"
+            android:inputType="number"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:textColorHint="#BEAEDC"
+            />
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/sum"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="+"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:onClick="sum"
+            android:background="@drawable/round_button"
+            />
+        <Button
+            android:id="@+id/difference"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="-"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:onClick="difference"
+            android:background="@drawable/round_button"
+            />
+        <Button
+            android:id="@+id/product"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="*"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:onClick="product"
+            android:background="@drawable/round_button"
+            />
+        <Button
+            android:id="@+id/divide"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="/"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:onClick="division"
+            android:background="@drawable/round_button"
+            />
+    </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result:"
+            android:textSize="30sp"
+            />
+        <TextView
+            android:id="@+id/result_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:text=""
+            android:textSize="30sp"
+            android:background="#F48282"
+            />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
